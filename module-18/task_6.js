@@ -7,12 +7,13 @@ Ticket fare Calculator
     - Otherwise Regular ticket fare 800 tk
 */
 let pament = 800;
-let age = 12;
+let age = "student";
+
 const student = true;
 if(age <10){
     console.log("free teket");
 }
-else if(student){
+else if(age === 'student'){
     pament = pament *50 /100;
     console.log(pament)
  
