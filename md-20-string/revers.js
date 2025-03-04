@@ -19,10 +19,14 @@ const sentenst = 'I am  learning web deve.';
 //     console.log(sentenst[i]);
 // }
 
-let rev = '';
-for(let i =0; i<sentenst.length; i++){
-    const leter = sentenst[i];
-    console.log(leter);
-    rev = leter +rev;
-}
-console.log(rev);
+// let rev = '';
+// for(let i =0; i<sentenst.length; i++){
+//     const leter = sentenst[i];
+//     console.log(leter);
+//     rev = leter +rev;
+// }
+// console.log(rev);
+
+// ---------------------------
+const reversed = sentenst.split('').reverse().join('');
+console.log(reversed);
