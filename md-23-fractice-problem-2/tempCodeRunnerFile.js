@@ -1,0 +1,2 @@
+
+const max = maxNumber(ar);
