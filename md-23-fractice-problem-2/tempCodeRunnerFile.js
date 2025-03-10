@@ -1,2 +1,1 @@
-
-const max = maxNumber(ar);
+  // console.log(ar[i]);
