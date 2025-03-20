@@ -1,6 +1,7 @@
 
 
  
+nehal_015
 
 
  function cashOut( money ) {
@@ -20,8 +21,7 @@
     
   
 }
-
-
+console.log(cashOut(1000));
 
 
 
