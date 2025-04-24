@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Commint</title>
+    <style>
+        #commint-container{
+            display:flex;
+             flex-direction:row; 
+        
+        }
+        .para-commint{
+            border:2px solid green;
+            background-color:brown;
+            width:500px;
+            height:300px;
+           
+            color:white;
+            font-size: 20px;
+            font-weight: 300;
+            margin:15px;
+            border-radius:15px;
+            padding:25px;
+        }
+       
+        #btn-post-commint{
+            background-color:brown;
+            color:aliceblue;
+            width:150px;
+            height:50px;
+            border:none;
+            border-radius:30px;
+
+
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>the commit chinge </h1>
+    <section>
+        <div id="commint-container">
+            <p class="para-commint">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad consequatur maiores doloribus, sequi minus nihil hic nobis distinctio doloremque veritatis!</p>
+            <p class="para-commint">Assumenda fugiat illum autem numquam aut at, vitae eaque distinctio voluptates velit dolorem debitis fugit! Esse aperiam maxime ipsam fuga?</p>
+            <p class="para-commint">Natus, quasi laborum impedit, deleniti, cum voluptatibus animi pariatur hic expedita at ex fugit perferendis incidunt autem! Molestias, quam aperiam?</p>
+        </div>
+        <textarea name="" id="text-commint-box" cols="30" rows="10"></textarea>
+        <br><br>
+        <button id="btn-post-commint">Text Button</button>
+
+    </section>
+    <script>
+        document.getElementById('btn-post-commint').addEventListener('click',function(){
+          
+            const textCoomintBox = document.getElementById('text-commint-box');
+           
+            const textNewCommint = textCoomintBox.value;
+           
+            const commintContainer = document.getElementById('commint-container');
+           
+            const p = document.createElement('p');
+            p.classList.add('para-commint');
+            p.innerText = textNewCommint;
+         
+            commintContainer.appendChild(p);
+            textCoomintBox.value = '';
+
+
+           
+
+
+        })
+ 
+        
+    </script>
+
+</body>
+</html>
