@@ -1,4 +1,8 @@
 
+const selector = document.querySelector('.bratherName li');
+// akane sudu ak ta output dekabe
+console.log(selector);
+
 
 const selectorAll = document.querySelectorAll('.bratherName li');
 console.log(selectorAll);
