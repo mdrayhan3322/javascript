@@ -20,3 +20,12 @@ buttonPurpleColor.onclick = blueFunction;
 function blueFunction(){
     document.body.style.backgroundColor='purple';
 }
+// option 4 --------------------------
+document.getElementById('btn-make-green').addEventListener('click', function makeGreen(){
+    document.body.style.backgroundColor = 'green';
+  });
+//   opton 4 -----------------------------
+document.getElementById("btn-gold")
+.addEventListener('click', function (){
+    document.body.style.backgroundColor= 'gold';
+})

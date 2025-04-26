@@ -37,6 +37,22 @@
             border-radius:30px;
             font-size:20px;
         }
+        .buttongreen{
+            width:150px;
+            height:70px;
+            padding:10px;
+            background-color:rgb(115, 131, 75);
+            border-radius:30px;
+            font-size:20px;
+        }
+        .make-gold-button{
+            width:150px;
+            height:70px;
+            padding:10px;
+            background-color:rgb(1, 255, 234);
+            border-radius:30px;
+            font-size:20px;
+        }
     </style>
 </head>
 <body>
@@ -45,25 +61,20 @@
     <h1>--------------------------- video 2 -----------------------</h1>
     <button onclick="makeRed()" class="redButton">click color red</button>
     <button onclick="makeYellow()" class="yellowButton">ame yellow </button>
+    <h1>-----------------------------------------------------</h1>
+    
+    <button id="btn-blue" class="blueButton">Make Blue</button>
+    <button id="btn-purple" class="buttonPurple">Make Purple</button>
+    <h1>================================================</h1>
+    <button id="btn-make-green" class="buttongreen">Make a  green button</button>
+    <button id="btn-gold" class="make-gold-button">Make a gold button</button>
  
 
     <script src="video-1.js"></script>
+  
 
-
-    <button id="btn-blue" class="blueButton">Make Blue</button>
-    <button id="btn-purple" class="buttonPurple">Make Purple</button>
     <script>
-        const buttonBlue = document.getElementById("btn-blue");
-        buttonBlue.onclick = function buttonBlueCollor(){
-            document.body.style.backgroundColor = 'blue';
-        }
-        // -----------------------------------------
-        const buttonPurpleColor = document.getElementById("btn-purple");
-        
-        buttonPurpleColor.onclick = blueFunction;
-        function blueFunction(){
-            document.body.style.backgroundColor='purple';
-        }
+
     </script>
 </body>
 </html>
