@@ -10,3 +10,12 @@ document.getElementById('logEnButton')
     const loginPage = document.getElementById("title-ching-tag");
     loginPage.innerText= 'user loggend in successfule';
 })
+// ------------------------------------------------
+document.getElementById('btn-order')
+.addEventListener('click',function(){
+ const inpuTtipe =document.getElementById('puotId')
+ const a = inpuTtipe.value;
+ const abc = document.getElementById('header-ching-text');
+ abc.innerText=a;
+ 
+})
