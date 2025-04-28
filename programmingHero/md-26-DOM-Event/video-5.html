@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .commint{
+            border:2px solid rgb(42, 99, 165);
+            background-color:rgb(234, 107, 107);
+            padding:20px;
+            color:whitesmoke;
+            width:600px;
+            border-top-left-radius: 30px;
+            border-bottom-right-radius: 45px;
+
+        }
+        #btn-click{
+            border:none;
+            padding:15px;
+            background-color:tomato;
+            border-radius:30px;
+            color:white;
+            margin-top:10px;
+            width:150px;
+            font-size:2rem;
+        }
+        #input-text{
+            border-left:5px solid tomato;
+            border-right:5px solid green;
+            border-top:5px solid blue;
+            border-bottom:5px solid cyan;
+            border-top-left-radius: 30px;
+            border-bottom-right-radius: 45px;
+            color:tomato;
+            padding:16px;
+            font-size:1rem;
+            background-color: rgb(255, 555, 555);
+        
+        }
+    </style>
+</head>
+<body>
+    <h1>cominnet heair</h1>
+    <div id="commint-container">
+        <h1>commint header</h1>
+        <p class="commint">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, error.</p>
+        <p class="commint">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora, harum.</p>
+        <p class="commint">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, itaque?</p>
+      
+    </div>
+    <textarea name="" id="input-text" cols="60" rows="7"></textarea>
+    <br>
+    <button id="btn-click">click me</button>
+    <script>
+        document.getElementById('btn-click').addEventListener('click',function (){
+            const inputText = document.getElementById('input-text');
+    
+            const inputBalue = inputText.value;
+            const commintContainer = document.getElementById('commint-container');
+            console.log(commintContainer);
+            const creatpTag = document.createElement('p');
+            creatpTag.classList.add('commint');
+            creatpTag.innerText= inputBalue;
+            commintContainer.appendChild(creatpTag);
+            inputText.value = '';
+       
+        });
+    </script>
+</body>
+</html>

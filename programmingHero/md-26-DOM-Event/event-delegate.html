@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #list-container{
+            border:4px solid darkblue;
+            padding:23px;
+            background-color:aqua;
+        }
+        .item{
+            background-color:whitesmoke;
+            border:2px solid tomato;
+            margin-bottom:20px;
+            font-size:1.5rem;
+        }
+        #btn-button{
+            width: 150px;;
+            padding:10px;
+            font-size:1.5rem;
+        }
+    </style>
+</head>
+<body>
+        <section>
+            <h1>event delegate</h1>
+            <ol id="list-container">
+                <li class="item">item list -1</li>
+                <li class="item">item list -2</li>
+                <li class="item">item list -3</li>
+                <li class="item">item list -4</li>
+                <li class="item">item list -5</li>
+            </ol>
+            <button id="btn-button">add new items</button>
+        </section>
+        <script>
+            document.getElementById('list-container')
+            .addEventListener('click',function(event){
+               event.target.parentNode.removeChild(event.target);
+            });
+            // add commint
+            document.getElementById('btn-button')
+            .addEventListener('click',function(){
+                const ol = document.getElementById('list-container');
+                const li = document.createElement('li');
+                li.innerText = 'ami add holam';
+                ol.appendChild(li);
+
+            })
+        </script>
+</body>
+</html>
