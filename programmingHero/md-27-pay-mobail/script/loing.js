@@ -5,7 +5,7 @@ document.getElementById('login-btn').addEventListener('click',
         const acconNumber = document.getElementById('Acount-number').
         value;
         const pin = document.getElementById('pin').value;
-        // console.log(typeof pin);
+        console.log(typeof pin);
         const convertedPin = parseInt(pin);
         if(acconNumber.length === 11 ){
          
