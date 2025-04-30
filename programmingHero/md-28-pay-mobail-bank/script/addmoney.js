@@ -34,6 +34,7 @@ document.getElementById('add-money').addEventListener('click',
                 const sum = convertedMainBalance + convertedAmountNumber;
                 document.getElementById('main-balance').innerText = sum;
 
+            
                
             }
             else alert('tomar pin number tik nai');
