@@ -17,3 +17,7 @@ function setInnerTextByIDandValue (id, value){
     document.getElementById(id).innerText =value;
 
 }
+// section hite na none  and block korar jonno  
+function handleToggle(id , status){
+  document.getElementById(id).style.display =status;
+}

@@ -48,7 +48,7 @@
                     <img class="w-8 mx-auto" src="./image/send1.png" alt="">
                     <h3>get Bonus</h3>
                 </div>
-                <div class="box border text-center p-4 rounded-sm cursor-pointer">
+                <div id="Transaction-box" class="box border text-center p-4 rounded-sm cursor-pointer">
                     <img class="w-8 mx-auto" src="./image/wallet1.png" alt="">
                     <h3>Transaction history</h3>
                 </div>
@@ -65,7 +65,7 @@
                       <div class="card  w-full max-w-sm shrink-0 shadow-2xl">
                         <div class="card-body">
                             <legend>Select Bank</legend>
-                            <select class="select">
+                            <select id="selected-Bank" class="select">
                                 <option disabled selected>Slect bank</option>
                                 <option value="Bkash">Bkash</option>
                                 <option value="Nagad">nagad</option>
@@ -111,6 +111,16 @@
                   </fieldset>
             </section>
            <!---------------------- cash out section end -------------------- -->
+
+           <!-- ------------------ Transactiiion Section start ------------------ -->
+
+           <section id="transaction-history">
+            <h1 class="text-3xl font-bold text-red-600 text-center bg-slate-300 p-3  mx-auto">Transection History</h1>
+            <div id="transaction-box" class="text-center mt-3 font-bold">
+
+            </div>
+           </section>
+           <!-- ------------------ Transactiiion Section end ------------------ -->
         </section>
     </section>
     <!-- --------------- javaScript file  -->
@@ -118,6 +128,7 @@
       <script src="./utilities/handleTogoll.js"></script>
       <script src="./script/newAddmony.js"></script>
       <script src="./utilities/cashOut.js"></script>
+      <script src="./script/transaction-history.js"></script>
       <script src="./utilities/utilites.js"></script>
 
  
