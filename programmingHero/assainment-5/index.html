@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+  <title>Document</title>
+</head>
+
+<body>
+  <section class="w-10/12 mx-auto   flex flex-col-1 justify-between p-5 mt-5 bg-blue-100 rounded-md">
+    <div class="ml-2 flex gap-3">
+      <img class="w-6 h-6" src="./images/logo.png" alt="">
+      <h2>Dev <span class="font-bold">Board</span></h2>
+    </div>
+    <div class="flex gap-3  items-center">
+      <div class="flex gap-2 bg-blue-50 rounded-md w-20 h-8 items-center justify-center mr-16">
+        <img class="w-6 h-6" src="./images/checkbox.png" alt="">
+        <h2>25</h2>
+      </div>
+      <button id="thime">
+        <img class="w-8 h-8 border-4 border-blue-100 rounded-full " src="./images/theme-btn.png" alt="">
+      </button>
+
+
+    </div>
+  </section>
+  <!-- ----------------------------------------------- -->
+  <section class="w-10/12 mx-auto flex flex-col-1  gap-4  mt-5">
+    <!-- 3 three collum section  -->
+    <!-- ---------------------- baner-section-container-- stairt -------------------------------------- -->
+    <div id="bener-section-container" class=" w-9/12">
+      <div class=" flex flex-col-2 gap-3 ml-2">
+        <div class="gap-4 w-3/12 bg-blue-100 p-2 rounded-md flex flex-col-1">
+          <img class="ml-3 bg-slate-50 w-8 h-8 my-auto border-solid border-8 border-white rounded-full"
+            src="./images/checkbox.png" alt="">
+          <h2>Task Assiged <br> <span id="place-bar" class="font-bold text-2xl">06</span></h2>
+        </div>
+
+
+        <div id="mainHtmlFile"
+          class="flex flex-col-1 gap-5 p-2 w-6/12 bg-gradient-to-r from-blue-700 to-blue-400  rounded-md">
+
+          <img class="ml-5 w-12 h-12 my-auto " src="./images/board.png" alt="">
+          <h2 class="text-center text-white font-bold my-auto ml-4">Discover Something <br><span
+              class="font-bold text-white">New Today!</span> </h2>
+
+        </div>
+        <div class="w-3/12 bg-blue-100 rounded-md">
+
+          <div class="flex flex-col-2  justify-center items-center my-auto mt-2">
+            <img class="border-solid border-8  border-white rounded-full w-8 h-8" src="./images/calender.png" alt="">
+            <h3 class="ml-3">web, <br> <span id="Date" class="font-bold"></span></h3>
+
+          </div>
+
+        </div>
+
+      </div>
+      <!-- ----------------------------------2 section tow ------------------------------------------- -->
+
+      <div id="2nContainer" class="mt-4 grid  grid-cols-3 gap-6 ">
+        <!-- ---------------------------- caird 1  ------------------->
+        <div class=" border-solid bg-blue-100 p-3 rounded-md">
+
+          <h3 class="mt-2 w-20 h-8 bg-white rounded-md ml-4 my-auto text-center">ShopEase</h3>
+          <h1 class="ml-4 mt-2 font-bold">Fix Mobile Button Issue </h1>
+          <p class="mt-2 h-16 bg-white ml-4 rounded-md p-2">Debug using Chrome DevTools <br>,
+            check for overlapping
+          </p>
+          <div class="mt-2 flex flex-col-1">
+            <p class="ml-4">Deadline <br><span>21 March 2025</span></p>
+            <button id="btn-one" onclick="disableBtn()" class="bg-blue-700 w-24 h-8 text-white rounded-md ml-10 mt-5">completed</button>
+          </div>
+        </div>
+        <!-- -----------------caird 2 --------------------------- -->
+        <div class=" border-solid bg-blue-100 p-3 rounded-md">
+
+          <h3 class="mt-2 w-20 h-8 bg-white rounded-md ml-4 my-auto text-center">CloudSync</h3>
+          <h1 class="ml-4 mt-2 font-bold">Add Dark Mode </h1>
+          <p class="mt-2 h-16 bg-white ml-4 rounded-md p-2">Debug using Chrome DevTools <br>,
+            check for overlapping
+          </p>
+          <div class="mt-2 flex flex-col-1">
+            <p class="ml-4">Deadline <br><span>21 March 2025</span></p>
+            <button id="btn-two" class="bg-blue-700 w-24 h-8 text-white rounded-md ml-10 mt-5">completed</button>
+          </div>
+        </div>
+        <!-- -------------------- caird 3 -------------------------- -->
+        <div class=" border-solid bg-blue-100 p-3 rounded-md">
+
+          <h3 class="mt-2 w-20 h-8 bg-white rounded-md ml-4 my-auto text-center">SwiftPay</h3>
+          <h1 class="ml-4 mt-2 font-bold">Optimize Home page</h1>
+          <p class="mt-2 h-16 bg-white ml-4 rounded-md p-2">Debug using Chrome DevTools <br>,
+            check for overlapping
+          </p>
+          <div class="flex flex-col-1">
+            <p class="ml-4">Deadline <br><span>21 March 2025</span></p>
+            <button id="btn-3" class="bg-blue-700 w-24 h-8 text-white rounded-md ml-10 mt-5">completed</button>
+          </div>
+        </div>
+
+        <!-- -------------------------caird 4 ---------------- -->
+        <div class=" border-solid bg-blue-100 p-3 rounded-md">
+
+          <h3 class="mt-2 w-20 h-8 bg-white rounded-md ml-4 my-auto text-center">Meta</h3>
+          <h1 class="ml-4 mt-2 font-bold">Add new emoji 🤲 </h1>
+          <p class="mt-2 h-16 bg-white ml-4 rounded-md p-2">Debug using Chrome DevTools <br>,
+            check for overlapping
+          </p>
+          <div class="mt-2 flex flex-col-1">
+            <p class="ml-4">Deadline <br><span>21 March 2025</span></p>
+            <button id="btn-4" class="bg-blue-700 w-24 h-8 text-white rounded-md ml-10 mt-5">completed</button>
+          </div>
+        </div>
+        <!-- -----------------------caird 5-------------------------- -->
+        <div class=" border-solid bg-blue-100 p-3 rounded-md">
+
+          <h3 class="mt-2 w-24 h-8 bg-white rounded-md ml-4 my-auto text-center">Google LLC</h3>
+          <h1 class="ml-4 mt-2 font-bold">Integrate OpenAI API </h1>
+          <p class="mt-2 h-16 bg-white ml-4 rounded-md p-2">Debug using Chrome DevTools <br>,
+            check for overlapping
+          </p>
+          <div class="mt-2 flex flex-col-1">
+            <p class="ml-4">Deadline <br><span>21 March 2025</span></p>
+            <button id="btn-5" class="bg-blue-700 w-24 h-8 text-white rounded-md ml-10 mt-5">completed</button>
+          </div>
+        </div>
+        <!-- ------------------------caird 6  -------------------------- -->
+        <div class=" border-solid bg-blue-100 p-3 rounded-md">
+
+          <h3 class="mt-2 w-20 h-8 bg-white rounded-md ml-4 my-auto text-center">Glassdoar</h3>
+          <h1 class="ml-4 mt-2 font-bold">Improve Job searching </h1>
+          <p class="mt-2 h-16 bg-white ml-4 rounded-md p-2">Debug using Chrome DevTools <br>,
+            check for overlapping
+          </p>
+          <div class="mt-2 flex flex-col-1">
+            <p class="ml-4">Deadline <br><span>21 March 2025</span></p>
+            <button id="btn-6" class="bg-blue-700 w-24 h-8 text-white rounded-md ml-10 mt-5">completed</button>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+    <!-- banner section container --end ----------------- -->
+    <!-- ------------------------------- history secton container---- stairt ------------------------ -->
+    <div id="history-section-container" class="  bg-blue-100 rounded-md text-center w-3/12">
+      <div class="flex flex-col1 gap-3 items-center justify-center mt-2">
+        <img class="w-4 h-4" src="./images/activity.png" alt="">
+        <h4>active Log</h4>
+      </div>
+      <button id="history-btn" class="w-24 h-8 bg-blue-700 rounded-md text-white mt-2">click history</button>
+      
+      <p id="date-1" class="bg-white rounded-md p-2 my-2 w-11/12 mx-auto"></p>
+      <p id="date-2" class="bg-white rounded-md p-2 my-2 w-11/12 mx-auto"></p>
+      <p id="date-3" class="bg-white rounded-md p-2 my-2 w-11/12 mx-auto"></p>
+      <p id="date-4" class="bg-white rounded-md p-2 my-2 w-11/12 mx-auto "></p>
+      <p id="date-5" class="bg-white rounded-md p-2 my-2 w-11/12 mx-auto"></p>
+      <p id="date-6" class="bg-white rounded-md p-2 my-2 w-11/12 mx-auto"></p>
+
+    </div>
+    <!-- ------------------------------- history secton container---- stairt ------------------------ -->
+
+  </section>
+
+
+
+
+
+
+
+
+  <script src="./javascript/assainment-5.js"></script>
+</body>
+
+</html>
