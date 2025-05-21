@@ -9,6 +9,7 @@ const person = {
 
     }
 }
-console.log(person.father?.frend);
-console.log(person?.mother);
+// console.log(person.father?.frend);
+// console.log(person?.mother);
 
+console.log(person["father"]['age']);
