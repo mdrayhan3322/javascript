@@ -22,3 +22,25 @@ const squer = number.map(singleValue =>{
 });
 // console.log(squer);
 
+// ------------------------------ dubble paramiter map function-------------------------
+const frinds =['mahamud','arafat','syme','shomic'];
+const a = frinds.map((element , index) =>{
+     
+    // console.log(index);
+    // console.log(element);
+
+})
+
+// ------------------------- single paramiter map function ----------------------------------------
+
+const frind = ['nijam','masud','jahid','jobaer'];
+const singleValue = frind.map(name =>{
+    console.log(name);
+    return name;
+});
+console.log(singleValue);
+
+
+
+
+
