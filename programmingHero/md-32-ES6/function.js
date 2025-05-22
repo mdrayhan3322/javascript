@@ -10,7 +10,6 @@ function sum (){
     newfunctio();
     // newfunctio();
 
-
 }
 sum();
 sum();
