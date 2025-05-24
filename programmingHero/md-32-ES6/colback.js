@@ -6,14 +6,17 @@
 // gotock(anser)
 // ------------------------------
 
-function ghotok(phatri,name){
+function ghotok(cb,name){
     
-    phatri(name);
+    cb(name);
+    // console.log('ami phatri 1',name);
     // phatri2(name);
 }
+
 const phatri = function(name){
     console.log('ami phatri 1',name);
 }
+
 const phatri2 = function(name){
     console.log('ami phatri 2',name);
 }
